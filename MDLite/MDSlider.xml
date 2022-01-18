@@ -1,0 +1,79 @@
+<Element
+  width="m: (300, 300, 600), d: (300, 300, 300)"
+  height="m: (20, 30, 50), d: (20, 20, 20)">
+
+  <Element
+    element="mBackground"
+    width="100%"
+    height="6"
+    borderRadius="all: 0.5"
+    backgroundColor="glm::vec4(96, 2, 238, 255)">
+  </Element>
+
+  <Element
+    element="mValue"
+    positionType="Absolute"
+    left="0"
+    height="30%"
+    borderRadius="all: 0.5">
+  </Element>
+
+  <Element
+    element="mDivisions"
+    positionType="Absolute"
+    alignItemsHor="SpaceBetween"
+    left="0"
+    width="100%"
+    height="6">
+  </Element>
+
+  <Element
+    element="mHoverCircle"
+    positionType="Absolute"
+    left="0"
+    opacity="0"
+    aspectRatio="1"
+    height="100%"
+    shapeType="Circle">
+  </Element>
+
+  <Element
+    element="mInfo"
+    positionType="Absolute"
+    left="0"
+    orientation="Vertical"
+    visibility="Gone">
+    <Element
+      element="mInfoShape"
+      backgroundColor="r: 100, g: 100, b: 100"
+      borderRadius="all: 5">
+      <Text
+        element="mInfoText"
+        fontSize="16"
+        textColor="all: 255"
+        marginLeft="16"
+        marginRight="16"
+        marginTop="8"
+        marginBottom="8">
+      </Text>
+    </Element>
+    <Element
+      element="mInfoTriangle"
+      shapeType="Triangle"
+      width="16"
+      height="8"
+      backgroundColor="r: 100, g: 100, b: 100">
+    </Element>
+  </Element>
+  <Element
+    element="mCircle"
+    positionType="Absolute"
+    left="0"
+    aspectRatio="1"
+    opacity="1.0"
+    height="100%"
+    shapeType="Circle"
+    backgroundColor="glm::vec4(96, 2, 238, 255)">
+  </Element>
+
+</MDBaseElement>

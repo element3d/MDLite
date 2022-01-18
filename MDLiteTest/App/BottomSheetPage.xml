@@ -1,0 +1,68 @@
+<Element
+  orientation="Vertical"
+  alignItemsVer="Start"
+  backgroundColor="glm::vec4(200, 200, 200, 255)">
+
+  <Element
+    width="100%"
+    height="m: 0, d: 40"
+    alignItemsHor="Start">
+    <MDIconButton
+      element="mBack"
+      name="_s(arrow_back)">
+    </MDIconButton>
+  </Element>
+
+  <MDScaffold
+    marginTop="m: 0, d:50"
+    width="m: 100%, d: 500"
+    height="m: 100%, d: 700"
+    orientation="Vertical"
+    backgroundColor="all: 255">
+    <MDAppBar
+      alignItemsHor="SpaceBetween">
+      <MDAppBarTitle
+        text="Bottom sheet">
+      </MDAppBarTitle>
+    </MDAppBar>
+    <Element
+      width="100%"
+      height="100%"
+      orientation="Vertical"
+      scaling="Shrink">
+      <MDButton
+        element="mShowButton"
+        label="_s(SHOW BOTTOM SHEET)">
+      </MDButton>
+    </Element>
+    <MDBottomSheet
+      element="mBottomSheet">
+      <Element
+        height="300"
+        backgroundColor="glm::vec4(255)"
+        alignItemsVer="Start"
+        orientation="Vertical">
+        <Shadow
+          blurSize="10"
+          offset="x: 0, y: 10">
+        </Shadow>
+        <Element
+          width="100%"
+          height="70">
+          <Text
+            text="Header"
+            fontSize="18">
+          </Text>
+        </Element>
+        <MDDivider
+          height="1"
+          backgroundColor="glm::vec4(0, 0, 0, 50)">
+        </MDDivider>
+        <MDListView
+          element="mList">
+        </MDListView>
+      </Element>
+    </MDBottomSheet>
+  </MDScaffold>
+
+</Element>

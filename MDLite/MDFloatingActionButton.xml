@@ -1,0 +1,40 @@
+<MDInkWell
+  width="m: 168, d: 56"
+  height="m: 168, d: 56"
+  padding="m: (20, 20, 60), d: 20"
+  borderRadius="all: 0.5"
+  overflow="Hidden"
+  backgroundColor="glm::vec4(96, 2, 238, 255)">
+
+  <!-- <Element
+    element="mRipple"
+    positionType="Absolute"
+    shapeType="Circle"
+    aspectRatio="1">
+  </Element> -->
+
+  <!-- <MDIcon
+    element="mIcon"
+    margin="0"
+    aspectRatio="1">
+  </MDIcon> -->
+
+  <!-- <Text
+    element="mLabel"
+    visibility="Hidden"
+    fontSize="m: (18, 22, 40), d: 16">
+  </Text> -->
+  <Element
+    element="mHover"
+    height="100%"
+    scaling="Grow"
+    positionType="Absolute">
+  </Element>
+  <Shadow
+    color="all: 100"
+    opacity="1.0"
+    offset="x: 0, y: 2"
+    blurSize="2">
+  </Shadow>
+
+</MDInkWell>

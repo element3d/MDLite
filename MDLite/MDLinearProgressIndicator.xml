@@ -1,0 +1,19 @@
+<Element
+  height="m: 12, d: 4"
+  backgroundColor='MDColors::Primary::Get("100")'
+  overflow="Hidden">
+  <include path="MDColors.h"/>
+  <Element
+    element="mBack"
+    width="100%"
+    height="100%">
+  </Element>
+  <Element
+    element="mValueElement"
+    width="100%"
+    height="100%"
+    positionType="Absolute"
+    backgroundColor="MDColors::Primary::Get()"
+    left="0">
+  </Element>
+</Element>

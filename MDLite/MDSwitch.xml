@@ -1,0 +1,41 @@
+<Element
+  width="m: (40, 55, 100), d: (36, 36, 36)"
+  height="m: (20, 30, 60), d: (20, 20, 20)">
+
+  <Element
+    element="mBack"
+    width="100%"
+    height="70%"
+    borderRadius="all: 0.5"
+    backgroundColor="#9965f4">
+  </Element>
+
+  <Element
+    element="mCircle"
+    positionType="Absolute"
+    left="0"
+    aspectRatio="1"
+    height="100%"
+    borderRadius="all: 0.5">
+    <!-- shapeType="Circle" -->
+
+    <Element
+      element="mRipple"
+      positionType="Absolute"
+      aspectRatio="1"
+      height="40"
+      shapeType="Circle">
+    </Element>
+
+    <Shadow
+      color="glm::vec4(100, 100, 100, 100)"
+      opacity="1.0"
+      offset="x: 0, y: 1"
+      blurSize="2">
+    </Shadow> 
+
+  </Element>
+
+ 
+
+</Element>

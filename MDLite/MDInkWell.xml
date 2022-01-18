@@ -1,0 +1,13 @@
+<MDElement
+  overflow="Hidden">
+  <Element
+    element="mRipple"
+    positionType="Absolute"
+    width="m: (20, 20, 40), d: (80, 80, 80)"
+    aspectRatio="1"
+    shapeType="Circle"
+    left="0"
+    top="0"
+    backgroundColor="r: 0, g: 0, b: 0, a: 0">
+  </Element>
+</MDElement>

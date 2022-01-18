@@ -1,0 +1,9 @@
+<Element
+  width="98%"
+  height="m: (50, 50, 140), d: (50, 50, 50)"
+  backgroundColor="r: 0, g: 0, b: 0"
+  borderRadius="all: 5"
+  positionType="Absolute"
+  overflow="Hidden"
+  bottom="20">
+</Element>

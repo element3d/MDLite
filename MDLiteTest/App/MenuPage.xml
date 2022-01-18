@@ -1,0 +1,110 @@
+<Element
+  orientation="Vertical"
+  alignItemsVer="Start"
+  backgroundColor="glm::vec4(200, 200, 200, 255)">
+
+  <var
+    name="mContextMenuBody">
+    <MDMenuBody>
+      <MDMenuItem>
+        <MDListTile
+          title="_s(menu 1)">
+        </MDListTile>
+      </MDMenuItem>
+      <MDMenuItem
+        enabled="false">
+        <MDListTile
+          title="_s(menu 2)">
+        </MDListTile>
+      </MDMenuItem>
+    </MDMenuBody>
+  </var>
+
+  <var
+    name="mMenuBody1">
+    <MDMenuBody>
+      <MDMenuItem>
+        <MDListTile
+          title="_s(menu 1)">
+        </MDListTile>
+      </MDMenuItem>
+      <MDMenuItem
+        enabled="false">
+        <MDListTile
+          title="_s(menu 2)">
+        </MDListTile>
+      </MDMenuItem>
+    </MDMenuBody>
+  </var>
+  <var
+    name="mContextMenu">
+    <MDMenu
+      body="mContextMenuBody">
+      <MDIconButton
+        name="_s(more_vert)">
+      </MDIconButton>
+    </MDMenu>
+  </var>
+
+  <Element
+    width="100%"
+    height="m: 0, d: 40"
+    alignItemsHor="Start">
+    <MDIconButton
+      element="mBack"
+      name="_s(arrow_back)">
+    </MDIconButton>
+  </Element>
+
+  <Element
+    marginTop="m: 0, d: 50"
+    width="m: 100%, d: 500"
+    height="m: 100%, d: 700"
+    orientation="Vertical"
+    backgroundColor="all: 255">
+    <MDAppBar
+      alignItemsHor="Start">
+      <MDAppBarTitle
+        text="Menus">
+      </MDAppBarTitle>
+    </MDAppBar>
+    <Element
+      width="100%"
+      height="100%"
+      orientation="Vertical"
+      scaling="Shrink">
+
+      <Text
+        text="Context menu"
+        fontSize="18"
+        fontStyle="Bold"
+        textColor='MDColors::Grey::Get("800")'>
+      </Text>
+      <MDListTile
+        marginTop="10"
+        title="_s(An item with a context menu)"
+        trailing="mContextMenu">
+      </MDListTile>
+    
+      <Text
+        marginTop="20"
+        text="Simple menu"
+        fontSize="18"
+        fontStyle="Bold"
+        textColor='MDColors::Grey::Get("800")'>
+      </Text>
+      <MDMenu
+        marginTop="10"
+        body="mMenuBody1">
+        <MDInkWell
+          backgroundColor="all: 255">
+          <MDListTile
+            title="_s(An item with a simple menu)">
+          </MDListTile>
+        </MDInkWell>
+      </MDMenu>
+    </Element>
+  </Element>
+
+ 
+</Element>

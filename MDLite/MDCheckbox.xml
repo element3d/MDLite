@@ -1,0 +1,24 @@
+<Element
+  width="m: (25, 30, 48), d: (24, 24, 24)"
+  aspectRatio="1"
+  borderSize="2"
+  borderRadius="all: 0"
+  margin="8">
+
+  <Element
+    element="mRipple"
+    positionType="Absolute"
+    aspectRatio="1"
+    height="40"
+    shapeType="Circle">
+  </Element>
+
+  <MDIcon
+    element="mIcon"
+    name="_s(done)"
+    color="MDTheme::Get()->OnPrimary"
+    width="m: (18, 18, 30), d: (18, 18, 18)"
+    aspectRatio="1">
+  </MDIcon> 
+
+</Element>

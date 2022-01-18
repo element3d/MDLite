@@ -1,0 +1,49 @@
+<Element
+  orientation="Vertical"
+  alignItemsVer="Start"
+  backgroundColor="glm::vec4(200, 200, 200, 255)">
+
+  <Element
+    width="100%"
+    height="m: 0, d: 40"
+    alignItemsHor="Start">
+    <MDIconButton
+      element="mBack"
+      name="_s(arrow_back)">
+    </MDIconButton>
+  </Element>
+
+  <MDScaffold
+    marginTop="m: 0, d: 20"
+    width="m: 100%, d: 500"
+    height="m: 100%, d: 700"
+    orientation="Vertical"
+    backgroundColor="all: 255">
+    <MDAppBar
+      alignItemsHor="Start">
+      <MDAppBarTitle
+        text="Sliders">
+      </MDAppBarTitle>
+    </MDAppBar>
+    <Element
+      width="100%"
+      height="100%"
+      orientation="Vertical"
+      scaling="Shrink">
+
+      <MDLinearProgressIndicator
+        element="mLinearIndicator"
+        width="90%">
+      </MDLinearProgressIndicator>
+   
+      <MDCircularProgressIndicator
+        element="mCircularIndicator"
+        marginTop="20">
+      </MDCircularProgressIndicator>
+
+    </Element>
+  </MDScaffold>
+
+
+
+</Element>

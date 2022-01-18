@@ -1,0 +1,103 @@
+<!-- <Input
+  width="m: (300, 400, 600), d: (300, 300, 300)"
+  height="m: (60, 80, 150), d: (60, 60, 60)"
+  paddingTop="m: (15, 15, 30), d: (15, 15, 15)"
+  fontSize="m: (17, 22, 40), d: (17, 17, 17)"
+  orientation="Vertical">
+  <include path="MDColors.h"/>
+
+  <Text
+    element="mHintText"
+    fontSize="m: (17, 22, 40), d: (17, 17, 17)"
+    marginLeft="m: (10, 15, 20), d: (10, 10, 10)"
+    positionType="Absolute"
+    left="0">
+  </Text>
+
+  <Element
+    element="mUnderline"
+    width="100%"
+    positionType="Absolute"
+    bottom="0"
+    height="m: (2, 2, 4), d: (2, 2, 2)"
+    backgroundColor="MDColors::Grey::Get()">
+  </Element>
+
+</Input> -->
+
+<Element
+  orientation="Vertical"
+  width="m: (300, 400, 600), d: (300, 300, 300)">
+  <MDElement
+    element="mContainer"
+    orientation="Vertical"
+    width="100%"  
+    height="m: (60, 80, 150), d: (48, 48, 48)">
+    <Element
+      width="100%">
+      <Element
+        width="m: (10, 15, 20), d: (16, 16, 16)"
+        height="m: (17, 22, 40), d: (16, 16, 16)">
+      </Element>
+      <Text
+        element="mLabelText"
+        scaling="Shrink"
+        width="100%"
+        textAlignHor="Start"
+        fontSize="m: (17, 22, 40), d: (16, 16, 16)">
+      </Text>
+    </Element>
+    <Element
+      width="100%">
+      <Text
+        element="mPrefixText"
+        visibility="Hidden"
+        fontSize="16"
+        marginLeft="m: (10, 15, 20), d: (16, 16, 16)">
+      </Text>
+      <Element
+        width="100%"
+        height="20"
+        scaling="Shrink"
+        marginLeft="m: (10, 15, 20), d: (16, 16, 16)">
+        <Input
+          element="mInput"
+          width="100%"
+          height="20"
+          scaling="Shrink"
+          fontSize="m: (17, 22, 40), d: (16, 16, 16)">
+        </Input>
+        <Text
+          element="mHintText"
+          width="100%"
+          height="20"
+          positionType="Absolute"
+          textAlignHor="Start"
+          fontSize="m: (17, 22, 40), d: (16, 16, 16)">
+        </Text>
+      </Element>
+    </Element>
+    <MDDivider
+      element="mUnderline"
+      width="100%"
+      positionType="Absolute"
+      bottom="0"
+      height="m: (2, 2, 4), d: (2, 2, 2)">
+    </MDDivider>
+  </MDElement>
+  <Element
+    width="100%"
+    height="19"
+    alignItemsVer="End"
+    alignItemsHor="SpaceBetween">
+    <Text
+      text="Helper text"
+      marginLeft="16"
+      fontSize="12">
+    </Text>
+    <Text
+      text="0/14"
+      fontSize="12">
+    </Text>
+  </Element>
+</Element>

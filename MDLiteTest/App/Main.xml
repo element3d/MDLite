@@ -1,0 +1,371 @@
+<MDElement
+  orientation="Vertical"
+  backgroundColor="MDTheme::Get()->Background"
+  overflow="Scroll"
+  alignItemsHor="Center">
+
+  <include path="MDColors.h"/>
+  <include path="MDIcon.h"/>
+
+  <Element
+    width="100%"
+    height="50"
+    marginTop="m: (10, 20, 30), d: 10">
+    <MDSwitch
+      element="mDarkModeSwitch">
+    </MDSwitch>
+  </Element>
+
+  <MDText
+    marginTop="m: (10, 20, 30), d: 10"
+    text="MATERIAL"
+    fontSize="m: 150, d: 50"
+    textColor="MDTheme::Get()->OnBackground"
+    fontStyle="Bold">
+  </MDText>
+  <MDText
+    marginTop="m: (10, 20, 30), d: 10"
+    text="DESIGN"
+    fontSize="m: 90, d: 30"
+    textColor="MDTheme::Get()->OnBackground"
+    fontStyle="Bold">
+  </MDText>
+
+  <Element
+    marginTop="m: 30, d: 10"
+    width="m: 100%, d: 400"
+    overflow="Hidden"
+    alignItemsVer="Start"
+    orientation="Vertical"
+
+    borderRadius="glm::vec4(20, 20, 0, 0)">
+
+
+    <MDCol>
+      <MDRow>
+        <MainMenuItem
+          element="mAppBarPage"
+          icon="_s(web_asset)"
+          title="_s(App bar)">
+        </MainMenuItem>
+        <MainMenuItem
+          element="mButtonPage"
+          icon="_s(crop_7_5)"
+          title="_s(Buttons)">
+        </MainMenuItem>
+      </MDRow>
+      <MDRow>
+        <MainMenuItem
+          element="mBottomNavBarPage"
+          icon="_s(video_label)"
+          title="_s(Bottom navbar)">
+        </MainMenuItem>
+        <MainMenuItem
+          element="mDrawerPage"
+          icon="_s(menu)"
+          title="_s(Drawer)">
+        </MainMenuItem>
+      </MDRow>
+      <MDRow>
+        <MainMenuItem
+          element="mBottomSheetPage"
+          icon="_s(video_label)"
+          title="_s(Bottom sheet)">
+        </MainMenuItem>
+        <MainMenuItem
+          element="mNavRailPage"
+          icon="_s(video_label)"
+          title="_s(Navigation rail)">
+        </MainMenuItem>
+      </MDRow>
+      <MDRow>
+        <MainMenuItem
+          element="mDialogPage"
+          icon="_s(crop_square)"
+          title="_s(Dialog)">
+        </MainMenuItem>
+        <MainMenuItem
+          element="mMenuPage"
+          icon="_s(more_vert)"
+          title="_s(Menu)">
+        </MainMenuItem>
+      </MDRow>
+      <MDRow>
+        <MainMenuItem
+          element="mProgressIndicatorsPage"
+          icon="_s(refresh)"
+          title="_s(Progress indicators)">
+        </MainMenuItem>
+        <MainMenuItem
+          element="mSelectionControlsPage"
+          icon="_s(check_box)"
+          title="_s(Selection controls)">
+        </MainMenuItem>
+      </MDRow>
+      <MDRow>
+        <MainMenuItem
+          element="mSlidersPage"
+          icon="_s(linear_scale)"
+          title="_s(Sliders)">
+        </MainMenuItem>
+        <MainMenuItem
+          element="mTabsPage"
+          icon="_s(tab)"
+          title="_s(Tabs)">
+        </MainMenuItem>
+      </MDRow>
+      <MDRow>
+        <MainMenuItem
+          element="mTextFieldsPage"
+          icon="_s(input)"
+          title="_s(Text fields)">
+        </MainMenuItem>
+        <MainMenuItem
+          element="mListPage"
+          icon="_s(list)"
+          title="_s(List)">
+        </MainMenuItem>
+      </MDRow>
+      <MDRow>
+        <MainMenuItem
+          element="mSnackbarPage"
+          icon="_s(input)"
+          title="_s(Snackbar)">
+        </MainMenuItem>
+      </MDRow>
+    </MDCol>
+
+    <!-- Appbar -->
+    <!-- <MDInkWell
+      element="mAppBarPage"
+      padding="10">
+      <MDListTile
+        leading='new MDIcon("add", 18, glm::vec4(0, 0, 0, 255))'
+        title="_s(App bar)"
+        subtitle="_s(Displays an information and sections related to the current screen)">
+      </MDListTile>
+    </MDInkWell>
+    <MDDivider
+      width="98%"
+      backgroundColor="MDColors::Grey::Get()">
+    </MDDivider> -->
+
+    <!-- Buttons -->
+    <!-- <MDInkWell
+      element="mButtonPage"
+      padding="10">
+      <MDListTile
+        leading='new MDIcon("add", 18, glm::vec4(0, 0, 0, 255))'
+        title="_s(Buttons)"
+        subtitle="_s(Text, elevated, outlined and more)">
+      </MDListTile>
+    </MDInkWell>
+    <MDDivider
+      width="98%"
+      backgroundColor="MDColors::Grey::Get()">
+    </MDDivider> -->
+
+    <!-- Bottom navbar -->
+    <!-- <MDInkWell
+      element="mBottomNavBarPage"
+      padding="10">
+      <MDListTile
+        leading='new MDIcon("add", 18, glm::vec4(0, 0, 0, 255))'
+        title="_s(Bottom navigation bar)"
+        subtitle="_s(Displays an information and sections related to the current screen)">
+      </MDListTile>
+    </MDInkWell>
+    <MDDivider
+      width="98%"
+      backgroundColor="MDColors::Grey::Get()">
+    </MDDivider> -->
+
+    <!-- Drawer -->
+    <!-- <MDInkWell
+      element="mDrawerPage"
+      padding="10">
+      <MDListTile
+        leading='new MDIcon("add", 18, glm::vec4(0, 0, 0, 255))'
+        title="_s(Drawer)"
+        subtitle="_s(Navigation drawer)">
+      </MDListTile>
+    </MDInkWell>
+    <MDDivider
+      width="98%"
+      backgroundColor="MDColors::Grey::Get()">
+    </MDDivider> -->
+
+    <!-- Dialog -->
+    <!-- <MDInkWell
+      element="mDialogPage"
+      padding="10">
+      <MDListTile
+        leading='new MDIcon("add", 18, glm::vec4(0, 0, 0, 255))'
+        title="_s(Dialog)"
+        subtitle="_s(Navigation Dialog)">
+      </MDListTile>
+    </MDInkWell>
+    <MDDivider
+      width="98%"
+      backgroundColor="MDColors::Grey::Get()">
+    </MDDivider> -->
+
+    <!-- Menu -->
+    <!-- <MDInkWell
+      element="mMenuPage"
+      padding="10">
+      <MDListTile
+        leading='new MDIcon("add", 18, glm::vec4(0, 0, 0, 255))'
+        title="_s(Menu)"
+        subtitle="_s(Menu)">
+      </MDListTile>
+    </MDInkWell>
+    <MDDivider
+      width="98%"
+      backgroundColor="MDColors::Grey::Get()">
+    </MDDivider> -->
+
+    <!-- Progress indicators -->
+    <!-- <MDInkWell
+      element="mProgressIndicatorsPage"
+      padding="10">
+      <MDListTile
+        leading='new MDIcon("add", 18, glm::vec4(0, 0, 0, 255))'
+        title="_s(Progress indicators)"
+        subtitle="_s(Linear, circular, indeterminate)">
+      </MDListTile>
+    </MDInkWell>
+    <MDDivider
+      width="98%"
+      backgroundColor="MDColors::Grey::Get()">
+    </MDDivider> -->
+
+    <!-- Selection controls -->
+    <!-- <MDInkWell
+      element="mSelectionControlsPage"
+      padding="10">
+      <MDListTile
+        leading='new MDIcon("add", 18, glm::vec4(0, 0, 0, 255))'
+        title="_s(Selection controls)"
+        subtitle="_s(Checkboxes, radio buttons and switches)">
+      </MDListTile>
+    </MDInkWell>
+    <MDDivider
+      width="98%"
+      backgroundColor="MDColors::Grey::Get()">
+    </MDDivider> -->
+
+    <!-- Sliders -->
+    <!-- <MDInkWell
+      element="mSlidersPage"
+      padding="10">
+      <MDListTile
+        leading='new MDIcon("add", 18, glm::vec4(0, 0, 0, 255))'
+        title="_s(Sliders)"
+        subtitle="_s(A widget for selecting a value by swiping)">
+      </MDListTile>
+    </MDInkWell>
+    <MDDivider
+      width="98%"
+      backgroundColor="MDColors::Grey::Get()">
+    </MDDivider> -->
+
+    <!-- Tabs -->
+    <!-- <MDInkWell
+      element="mTabsPage"
+      padding="10">
+      <MDListTile
+        leading='new MDIcon("add", 18, glm::vec4(0, 0, 0, 255))'
+        title="_s(Tabs)"
+        subtitle="_s(Tabs with scrollable views)">
+      </MDListTile>
+    </MDInkWell>
+    <MDDivider
+      width="98%"
+      backgroundColor="MDColors::Grey::Get()">
+    </MDDivider> -->
+
+    <!-- Text fiels -->
+    <!-- <MDInkWell
+      element="mTextFieldsPage"
+      padding="10">
+      <MDListTile
+        leading='new MDIcon("add", 18, glm::vec4(0, 0, 0, 255))'
+        title="_s(Text fields)"
+        subtitle="_s(Inputs and text areas)">
+      </MDListTile>
+    </MDInkWell> -->
+    <!-- <MDDivider
+      width="98%"
+      height="2">
+    </MDDivider> -->
+  </Element>
+  <!-- <var
+    name="mMenuBody">
+    <MDMenuBody>
+      <MDMenuItem>
+        <MDListTile
+          title="_s(menu 1)">
+        </MDListTile>
+      </MDMenuItem>
+      <MDMenuItem
+        enabled="false">
+        <MDListTile
+          title="_s(menu 2)">
+        </MDListTile>
+      </MDMenuItem>
+    </MDMenuBody>
+  </var>
+
+  <MDMenu
+    body="mMenuBody">
+    <MDIconButton
+      name="_s(add)">
+    </MDIconButton>
+  </MDMenu>
+
+  <MDButton
+    marginTop="20"
+    label="_s(BUTTON)"
+    icon='new MDIcon("add", 18, glm::vec4(255))'>
+  </MDButton>
+
+  <MDOutlinedButton
+    marginTop="20"
+    label="_s(BUTTON)">
+  </MDOutlinedButton>
+
+  <MDFloatingActionButton
+    marginTop="20"
+    icon='new MDIcon("add", 18, glm::vec4(255))'>
+  </MDFloatingActionButton>
+
+  <MDInkWell
+    marginTop="20"
+    width="200"
+    height="40">
+  </MDInkWell>
+
+  <MDCheckbox
+    marginTop="20">
+  </MDCheckbox>
+
+  <MDRadio
+    marginTop="20">
+  </MDRadio>
+
+  <MDSwitch
+    marginTop="20">
+  </MDSwitch>
+
+  <MDInput
+    marginTop="20">
+  </MDInput>
+
+  <MDSlider
+    marginTop="20">
+  </MDSlider> -->
+
+  
+  
+</MDElement>

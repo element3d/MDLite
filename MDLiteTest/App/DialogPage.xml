@@ -1,0 +1,64 @@
+<Element
+  orientation="Vertical"
+  alignItemsVer="Start"
+  backgroundColor="glm::vec4(200, 200, 200, 255)">
+
+  <Element
+    width="100%"
+    height="m: 0, d: 40"
+    alignItemsHor="Start">
+    <MDIconButton
+      element="mBack"
+      name="_s(arrow_back)">
+    </MDIconButton>
+  </Element>
+
+  <MDScaffold
+    marginTop="m: 0, d: 50"
+    width="m: 100%, d: 500"
+    height="m: 100%, d: 700"
+    orientation="Vertical"
+    backgroundColor="all: 255">
+    <MDAppBar
+      alignItemsHor="Start">
+      <MDAppBarTitle
+        text="Dialog">
+      </MDAppBarTitle>
+    </MDAppBar>
+    <Element
+      width="100%"
+      height="100%"
+      orientation="Vertical"
+      scaling="Shrink">
+
+      <MDButton
+        element="mDialogButton"
+        label="_s(SHOW DIALOG)">
+      </MDButton>
+     
+    </Element>
+    <MDDialog
+      element="mDialog"
+      width="m: 840, d: 280"
+      height="m: 450, d: 150">
+
+      <Element
+        height="100%"
+        width="100%"
+        scaling="Shrink">
+      </Element>
+      <Element
+        width="100%"
+        alignItemsHor="End">
+        <MDTextButton
+          label="_s(CANCEL)">
+        </MDTextButton>
+        <MDTextButton
+          label="_s(DISCARD)">
+        </MDTextButton>
+      </Element>
+
+    </MDDialog>
+  </MDScaffold>
+
+</Element>

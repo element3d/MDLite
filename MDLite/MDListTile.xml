@@ -1,0 +1,29 @@
+<Element
+  width="100%"
+  height="m: (50, 50, 150), d: (50, 50, 50)">
+
+  <Element
+    element="mLeading"
+    marginLeft="m(20, 20, 60), d: 20"
+    marginRight="m(20, 20, 60), d: 20">
+  </Element>
+  <Element
+    element="mTitleBody"
+    width="100%"
+    height="100%"
+    scaling="Shrink"
+    marginLeft="m(20, 20, 60), d: 20"
+    alignItemsHor="Start"
+    orientation="Vertical">
+  </Element>
+  <Element
+    element="mTrailing">
+  </Element>
+  <!-- <Element
+    element="mRipple"
+    positionType="Absolute"
+    shapeType="Circle"
+    aspectRatio="1">
+  </Element> -->
+
+</Element>

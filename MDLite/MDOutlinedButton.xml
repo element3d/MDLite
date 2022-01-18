@@ -1,0 +1,36 @@
+<MDInkWell
+  height="m: (35, 55, 100), d: 36"
+
+  borderColor="MDColors::Primary::Get()"
+  borderRadius="all: 5"
+  borderSize="1">
+  <!-- minWidth="m: (100, 150, 300), d: (100, 100, 100)"
+  paddingLeft="16"
+  paddingRight="16" -->
+  <include path="MDColors.h"/>
+
+  <Element
+    element="mIconCont">
+  </Element>
+
+  <!-- <MDIcon
+    element="mIcon"
+    margin="0">
+  </MDIcon> -->
+
+  <Text
+    element="mLabel"
+    fontStyle="Bold"
+    marginRight="m: (20, 20, 30), d: 16"
+    marginLeft="m: (20, 20, 30), d: 16"
+    fontSize="m: (18, 22, 40), d: 16"
+    textColor="glm::vec4(96, 2, 238, 255)">
+  </Text>
+  <Element
+    element="mHover"
+    height="100%"
+    scaling="Grow"
+    positionType="Absolute">
+  </Element>
+
+</MDInkWell>

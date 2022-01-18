@@ -1,0 +1,74 @@
+<Element
+  orientation="Vertical"
+  alignItemsVer="Start"
+  backgroundColor="glm::vec4(200, 200, 200, 255)">
+
+  <var
+    name="mMenuBody">
+    <MDMenuBody>
+      <MDMenuItem>
+        <MDListTile
+          title="_s(menu 1)">
+        </MDListTile>
+      </MDMenuItem>
+      <MDMenuItem
+        enabled="false">
+        <MDListTile
+          title="_s(menu 2)">
+        </MDListTile>
+      </MDMenuItem>
+    </MDMenuBody>
+  </var>
+
+  <Element
+    width="100%"
+    height="m: 0, d: 40"
+    alignItemsHor="Start">
+    <MDIconButton
+      element="mBack"
+      name="_s(arrow_back)">
+    </MDIconButton>
+  </Element>
+
+  <MDScaffold
+    marginTop="m: 0, d:50"
+    width="m: 100%, d: 500"
+    height="m: 100%, d: 700"
+    orientation="Vertical"
+    backgroundColor="all: 255">
+    <MDAppBar
+      alignItemsHor="SpaceBetween">
+      <MDAppBarTitle
+        text="Navigation rail">
+      </MDAppBarTitle>
+    </MDAppBar>
+    <Element
+      width="100%"
+      height="100%"
+      orientation="Horizontal"
+      scaling="Shrink"
+      alignItemsHor="Start">
+      <MDNavigationRail>
+        <MDNavigationRailItem
+          title="_s(Comments)"
+          icon="_s(comment)">
+        </MDNavigationRailItem>
+        <MDNavigationRailItem
+          title="_s(Calendar)"
+          icon="_s(calendar_today)">
+        </MDNavigationRailItem>
+        <MDNavigationRailItem
+          title="_s(Account)"
+          icon="_s(account_circle)">
+        </MDNavigationRailItem>
+      </MDNavigationRail>
+      <MDDivider
+        orientation="Vertical"
+        width="1"
+        height="100%"
+        backgroundColor="MDTheme::Get()->OnBackground">
+      </MDDivider>
+    </Element>
+  </MDScaffold>
+
+</Element>

@@ -1,0 +1,34 @@
+<MDElement
+  orientation="Vertical"
+  alignItemsVer="Start"
+  backgroundColor="MDTheme::Get()->Background">
+
+  <Element
+    width="100%"
+    height="m:0, d: 40"
+    alignItemsHor="Start">
+    <MDIconButton
+      element="mBack"
+      name="_s(arrow_back)"
+      color="MDTheme::Get()->OnBackground">
+    </MDIconButton>
+  </Element>
+
+  <MDScaffold
+    marginTop="m:0, d: 50"
+    width="m: 100%, d: 500"
+    height="m: 100%, d: 700"
+    orientation="Vertical"
+    backgroundColor="all: 255">
+    <MDAppBar
+      alignItemsHor="Start">
+      <MDAppBarTitle
+        text="List">
+      </MDAppBarTitle>
+    </MDAppBar>
+    <MDListView
+      element="mList">
+    </MDListView>
+  </MDScaffold>
+
+</MDElement>

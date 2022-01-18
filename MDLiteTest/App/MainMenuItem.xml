@@ -1,0 +1,24 @@
+ <MDInkWell
+  width="m: 450, d: 150"
+  height="m: 450, d: 150"
+  margin="m: 30, d: 10"
+  orientation="Vertical"
+  borderRadius="glm::vec4(5)"
+  borderColor="MDTheme::Get()->PrimaryColor"
+  borderSize="m: 6, d: 2"
+  backgroundColor="MDTheme::Get()->Surface">
+  <MDIcon
+    element="mIcon"
+    name="_s(web_asset)"
+    width="m: 108, d: 36"
+    height="m: 108, d: 36"
+    color="MDTheme::Get()->PrimaryColor">
+  </MDIcon>
+  <MDText
+    element="mTitle"
+    text="App bar"
+    textColor="MDTheme::Get()->PrimaryColor"
+    fontSize="m: 52, d:14"
+    fontStyle="Bold">
+  </MDText>
+</MDInkWell>

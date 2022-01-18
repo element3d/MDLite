@@ -1,0 +1,17 @@
+<DropdownBody
+  width="m: (200, 200, 600), d: (230, 230, 230)"
+  paddingTop="m: (10, 10, 20), d: (10, 10, 10)"
+  paddingBottom="m: (10, 10, 20), d: (10, 10, 10)"
+  backgroundColor="all: 255"
+  borderRadius="all: 2"
+  orientation="Vertical"
+  alignItemsVer="Start"
+  overflow="Hidden">
+
+  <Shadow
+    color="all: 180"
+    offset="x: 2, y: 4"
+    blurSize="e3::Dim(12, 12, 12, 4, 4, 4)">
+  </Shadow>
+
+</DropdownBody>

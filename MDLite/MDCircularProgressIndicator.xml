@@ -1,0 +1,9 @@
+<Arc
+  width="m: 144, d: 48"
+  aspectRatio="1"
+  innerRadius="m: 60, d: 20"
+  backgroundColor="MDColors::Primary::Get()">
+
+  <include path="MDColors.h" />
+
+</Arc>

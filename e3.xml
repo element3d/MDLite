@@ -1,0 +1,8 @@
+<Projects>
+	<MDLite type="Lib"/>
+	<MDLiteTest type="App">
+		<Desktop/>
+		<Android/>
+	</MDLiteTest>
+</Projects>
+

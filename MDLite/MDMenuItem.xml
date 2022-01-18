@@ -1,0 +1,22 @@
+<MDInkWell
+  backgroundColor="all: 255"
+  overflow="Hidden"
+  width="100%"
+  height="m: (50, 50, 120), d: (50, 50, 50)">
+
+  <Element
+    element="mHover"
+    height="100%"
+    scaling="Grow"
+    positionType="Absolute">
+  </Element>
+
+   <!-- <Element
+    element="mRipple"
+    positionType="Absolute"
+    width="m: (20, 20, 40), d: (80, 80, 80)"
+    aspectRatio="1"
+    shapeType="Circle"
+    backgroundColor="r: 255, g: 255, b: 255, a: 0">
+  </Element> -->
+</MDInkWell>

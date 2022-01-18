@@ -1,0 +1,44 @@
+<MDInkWell
+  orientation="Vertical"
+  overflow="Hidden"
+  height="m: 144, d: 48"
+  backgroundColor="MDColors::Primary::Get()">
+
+  <include path="MDColors.h" />
+  <!-- <Element
+    element="mRipple"
+    positionType="Absolute"
+    shapeType="Circle"
+    aspectRatio="1">
+  </Element> -->
+
+  <MDIcon
+    element="mTopIcon"
+    visibility="Hidden">
+  </MDIcon>
+
+  <Element
+    paddingLeft="m: (20, 20, 40), d: (20, 20, 20)"
+    paddingRight="m: (20, 20, 40), d: (20, 20, 20)"
+    paddingTop="m: (10, 10, 40), d: (10, 10, 10)"
+    paddingBottom="m: (10, 10, 40), d: (10, 10, 10)">
+    <MDIcon
+      element="mLeadingIcon"
+      margin="0">
+    </MDIcon>
+    <Text
+      element="mLabel"
+      textColor="all: 255"
+      fontStyle="Bold"
+      fontSize="m: (20, 20, 40), d: 14">
+    </Text>
+  </Element>
+
+  <Element
+    element="mHover"
+    height="100%"
+    scaling="Grow"
+    positionType="Absolute">
+  </Element>
+
+</MDInkWell>

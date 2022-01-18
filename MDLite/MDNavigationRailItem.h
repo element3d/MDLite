@@ -1,0 +1,34 @@
+
+#ifndef MDNavigationRailItem_H_
+#define MDNavigationRailItem_H_
+
+#include "private/MDNavigationRailItemBase.h"
+
+class E3_EXPORT MDNavigationRailItem : public MDNavigationRailItemBase
+{
+public:
+	MDNavigationRailItem(e3::Element* pParent = nullptr);
+
+	void SetTitle(const std::string& title, bool translate = false);
+	void SetIcon(const std::string& iconName);
+
+	void Select();
+	void Unselect();
+
+	virtual bool OnClick(e3::MouseEvent*) override;
+	virtual void OnMouseHover(e3::MouseEvent* pEvent) override;
+	virtual void OnMouseEnter(e3::MouseEvent* pEvent) override;
+	virtual void OnMouseLeave(e3::MouseEvent* pEvent) override;
+	virtual void Render() override;
+
+private:
+	void _DismissRipple();
+
+private:
+	e3::Animation* mAnimation = nullptr;
+	e3::Animation* mRippleAnimation = nullptr;
+	bool mSelected = false;
+};
+
+#endif // MDNavigationRailItem_H_
+
