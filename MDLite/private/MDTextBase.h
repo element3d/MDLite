@@ -3,6 +3,7 @@
 #define __MDTextBase_H__
 
 #include <e3/ViewFactory.h>
+#include "elementary/GoogleFonts/GoogleFonts/GoogleFonts.h"
 
 
 class MDTextBase : public e3::Text

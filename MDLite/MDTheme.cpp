@@ -57,10 +57,19 @@ void MDTheme::Set(MDTheme* pTheme)
 void MDTheme::SetDefault()
 {
 	*sCurrentTheme->PrimaryColor = *sDefaultTheme->PrimaryColor;
+	*sCurrentTheme->OnPrimary = *sDefaultTheme->OnPrimary;
 	*sCurrentTheme->OnBackground = *sDefaultTheme->OnBackground;
 	*sCurrentTheme->Background = *sDefaultTheme->Background;
 	*sCurrentTheme->OnSurface = *sDefaultTheme->OnSurface;
 	*sCurrentTheme->Surface = *sDefaultTheme->Surface;
+	*sCurrentTheme->ScaffoldBackgroundColor = *sDefaultTheme->ScaffoldBackgroundColor;
+	*sCurrentTheme->AppBarTheme.BackgroundColor = *sDefaultTheme->AppBarTheme.BackgroundColor;
+	*sCurrentTheme->AppBarTheme.TextColor = *sDefaultTheme->AppBarTheme.TextColor;
+	*sCurrentTheme->AppBarTheme.IconColor = *sDefaultTheme->AppBarTheme.IconColor;
+	*sCurrentTheme->DialogTheme.BackgroundColor = *sDefaultTheme->DialogTheme.BackgroundColor;
+	*sCurrentTheme->BottomNavigationBarTheme.BackgroundColor = *sDefaultTheme->BottomNavigationBarTheme.BackgroundColor;
+	*sCurrentTheme->BottomNavigationBarTheme.SelectedItemColor = *sDefaultTheme->BottomNavigationBarTheme.SelectedItemColor;
+	*sCurrentTheme->BottomNavigationBarTheme.UnselectedItemColor = *sDefaultTheme->BottomNavigationBarTheme.UnselectedItemColor;
 }
 
 MDTheme::MDTheme()

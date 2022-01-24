@@ -1,7 +1,7 @@
 #include "AppBarPageBase.h"
 
 #include <e3/ViewFactory.h>
-#include ".\MDLiteTestValues.h"
+#include "./MDLiteTestValues.h"
 
 AppBarPageBase::AppBarPageBase(e3::Element* pParent)
 	: MDElement(pParent)

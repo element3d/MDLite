@@ -14,10 +14,11 @@ file(GLOB SRC CONFIGURE_DEPENDS
 )
 
 add_library(${PROJECT} SHARED ${SRC_PRIVATE} ${SRC})
-
+message(STATUS ***************** ${ELEMENTARY_LIBS})
 target_link_libraries(${PROJECT}
     element3d
     CarbonGL
+	${ELEMENTARY_LIBS}
 )
 
 if(ANDROID)

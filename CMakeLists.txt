@@ -11,6 +11,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_SOURCE_DIR}/bin)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_SOURCE_DIR}/bin)
 
+message(STATUS +++++++++++++++++++++  $ENV{ELEMENT3D_DIR})
+message(STATUS +++++++++++++++++++++  ${ELEMENT3D_DIR})
+
 set(LIBS_DIR $ENV{ELEMENT3D_DIR}/libs/lib)
 set(INCLUDES_DIR $ENV{ELEMENT3D_DIR}/libs/include)
 
@@ -37,10 +40,13 @@ elseif(UNIX)
 endif()
 
 set (ELEMENTARY_LIBS "")
-if (EXISTS elementary)
-	include_directories(elementary)
-	add_subdirectory(elementary)
+set (ELEMENTARY_INCLUDE_DIRS "")
+
+if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/elementary)
+        include_directories(elementary)
+        add_subdirectory(elementary)
 endif()
+include_directories(${ELEMENTARY_INCLUDE_DIRS})
 
 include_directories(MDLite)
 add_subdirectory(MDLite)

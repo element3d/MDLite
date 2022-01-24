@@ -1,4 +1,4 @@
-<Text>
-  <!-- font="GoogleFonts::Roboto()">
-  <include path="GoogleFonts/GoogleFonts.h" /> -->
+<Text
+  font="GoogleFonts::Roboto()">
+  <include path="elementary/GoogleFonts/GoogleFonts/GoogleFonts.h" /> 
 </Text>

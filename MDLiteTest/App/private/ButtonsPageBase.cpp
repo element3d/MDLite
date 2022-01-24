@@ -1,7 +1,7 @@
 #include "ButtonsPageBase.h"
 
 #include <e3/ViewFactory.h>
-#include ".\MDLiteTestValues.h"
+#include "MDLiteTestValues.h"
 
 ButtonsPageBase::ButtonsPageBase(e3::Element* pParent)
 	: MDElement(pParent)

@@ -1,7 +1,7 @@
 #include "MainBase.h"
 
 #include <e3/ViewFactory.h>
-#include ".\MDLiteTestValues.h"
+#include "./MDLiteTestValues.h"
 
 MainBase::MainBase(e3::Element* pParent)
 	: MDElement(pParent)

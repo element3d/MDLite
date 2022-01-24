@@ -1,7 +1,7 @@
 #include "MenuPageBase.h"
 
 #include <e3/ViewFactory.h>
-#include ".\MDLiteTestValues.h"
+#include "MDLiteTestValues.h"
 
 MenuPageBase::MenuPageBase(e3::Element* pParent)
 	: e3::Element(pParent)

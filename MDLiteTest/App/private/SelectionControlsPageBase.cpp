@@ -1,7 +1,7 @@
 #include "SelectionControlsPageBase.h"
 
 #include <e3/ViewFactory.h>
-#include ".\MDLiteTestValues.h"
+#include "MDLiteTestValues.h"
 
 SelectionControlsPageBase::SelectionControlsPageBase(e3::Element* pParent)
 	: e3::Element(pParent)
