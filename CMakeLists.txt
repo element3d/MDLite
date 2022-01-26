@@ -39,12 +39,10 @@ elseif(UNIX)
     link_directories(${LIBS_DIR}/Linux)
 endif()
 
-set (ELEMENTARY_LIBS "")
 set (ELEMENTARY_INCLUDE_DIRS "")
 
 if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/elementary)
-        include_directories(elementary)
-        add_subdirectory(elementary)
+	add_subdirectory(elementary)
 endif()
 include_directories(${ELEMENTARY_INCLUDE_DIRS})
 

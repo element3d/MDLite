@@ -12,9 +12,11 @@ file(GLOB SRC CONFIGURE_DEPENDS
 	*.cpp 
 	*.h
 )
+include(${CMAKE_CURRENT_SOURCE_DIR}/../cmake/get_elementary_libs.cmake)
+get_elementary_libs()
 
 add_library(${PROJECT} SHARED ${SRC_PRIVATE} ${SRC})
-message(STATUS ***************** ${ELEMENTARY_LIBS})
+
 target_link_libraries(${PROJECT}
     element3d
     CarbonGL
