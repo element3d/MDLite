@@ -41,11 +41,9 @@ endif()
 
 if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/elementary)
 	set (ELEMENTARY_ENABLED 1)
-	set (ELEMENTARY_INCLUDE_DIRS "")
-	add_subdirectory(elementary)
+	include(${CMAKE_CURRENT_SOURCE_DIR}/elementary/CMakeLists.txt)
 	set (ELEMENTARY_ENABLED 0)
 endif()
-include_directories(${ELEMENTARY_INCLUDE_DIRS})
 
 include_directories(MDLite)
 add_subdirectory(MDLite)
