@@ -1,7 +1,7 @@
 <MDInkWell
   height="m: (35, 55, 100), d: 36"
 
-  borderRadius="all: 5"
+  borderRadius="all: 10"
   overflow="Hidden"
   backgroundColor="MDTheme::Get()->PrimaryColor">
   <!-- minWidth="m: (100, 150, 300), d: (100, 100, 100)" -->

@@ -1,29 +1,29 @@
 #include "MDOutlinedButton.h"
 
-MDOutlinedButton::MDOutlinedButton(e3::Element* pParent)
-	: MDOutlinedButtonBase(pParent)
+MDOutlinedButton::MDOutlinedButton(e3::Element *pParent)
+		: MDOutlinedButtonBase(pParent)
 {
 	mLabel->SetTextColor(*MDTheme::Get()->PrimaryColor);
 	SetBorderColor(MDTheme::Get()->PrimaryColor);
 }
 
-void MDOutlinedButton::SetLabel(const std::string& label, bool translate)
+void MDOutlinedButton::SetLabel(const std::string &label, bool translate)
 {
 	//mLabel->SetVisibility(e3::EVisibility::Visible);
 	mLabel->SetText(label, translate);
 }
 
-void MDOutlinedButton::SetIcon(MDIcon* pIcon)
+void MDOutlinedButton::SetIcon(MDIcon *pIcon)
 {
-	pIcon->SetMarginLeft(16);
+	pIcon->SetMarginLeft(e3::Dim("12dp"));
 	pIcon->SetMarginRight(0);
-	pIcon->SetWidth(14);
-	pIcon->SetHeight(14);
+	pIcon->SetWidth(e3::Dim("12dp"));
+	pIcon->SetHeight(e3::Dim("12dp"));
 	pIcon->SetColor(MDTheme::Get()->PrimaryColor);
 	mIconCont->AddElement(pIcon);
 }
 
-void MDOutlinedButton::OnMouseEnter(e3::MouseEvent* pEvent)
+void MDOutlinedButton::OnMouseEnter(e3::MouseEvent *pEvent)
 {
 	MDOutlinedButtonBase::OnMouseEnter(pEvent);
 	mHover->SetWidth(GetGeometry().width);
@@ -31,7 +31,7 @@ void MDOutlinedButton::OnMouseEnter(e3::MouseEvent* pEvent)
 	mHover->SetBackgroundColor(glm::vec4(glm::vec3(GetBorderColor()), 10));
 }
 
-void MDOutlinedButton::OnMouseLeave(e3::MouseEvent* pEvent)
+void MDOutlinedButton::OnMouseLeave(e3::MouseEvent *pEvent)
 {
 	MDOutlinedButtonBase::OnMouseLeave(pEvent);
 	mHover->SetBackgroundColor(glm::vec4(255, 255, 255, 0));

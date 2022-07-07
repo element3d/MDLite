@@ -9,7 +9,7 @@ MDInput::MDInput(e3::Element* pParent)
 	mInput->SetOnFocusOutCallback([this]() {
 		Unfocus();
 	});
-	mLabelText->SetTranslation(glm::vec3(0, e3::Dim(-10, -15, -20, 8, 8, 8), 0));
+	mLabelText->SetTranslation(glm::vec3(0, e3::Dim("10dp"), 0));
 	mPrefixText->SetTextColor(glm::vec4(0));
 	mHintText->SetVisibility(e3::EVisibility::Hidden);
 	mContainer->SetBackgroundColor(glm::vec4(glm::vec3(*MDTheme::Get()->OnSurface), 0.03 * 255));
@@ -90,7 +90,7 @@ void MDInput::Unfocus()
 	{
 		glm::vec4 tr(0, 0, 0, 1);
 		tr = GetTranslation() * tr;
-		mLabelText->SetTranslation(glm::vec3(0, e3::Dim(-10, -15, -20, 8, 8, 8), 0));
+		mLabelText->SetTranslation(glm::vec3(0, e3::Dim("10dp"), 0));
 		mLabelText->SetScale(glm::vec3(1.0, 1.0, 1.0), e3::ETransformAlignment::Center);
 		mPrefixText->SetVisibility(e3::EVisibility::Hidden);
 

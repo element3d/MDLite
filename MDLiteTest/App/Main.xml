@@ -51,7 +51,7 @@
         <MainMenuItem
           element="mButtonPage"
           icon="_s(crop_7_5)"
-          title="_s(Buttons)">
+          title="_s(Кнопки)">
         </MainMenuItem>
       </MDRow>
       <MDRow>

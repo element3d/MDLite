@@ -5,7 +5,7 @@
 
   <Element
     width="100%"
-    height="40"
+    height="m: 0, d: 40"
     alignItemsHor="Start">
     <MDIconButton
       element="mBack"
@@ -14,19 +14,15 @@
   </Element>
 
   <MDScaffold
-    marginTop="20"
-    width="500"
-    height="700"
+    marginTop="m: 0, d: 20"
+    width="m: 100%, d: 500"
+    height="m: 100%, d: 700"
     orientation="Vertical">
     <MDAppBar
       alignItemsHor="Start">
-      <Text
-        text="Sliders"
-        fontSize="18"
-        textColor="all: 255"
-        fontStyle="Bold"
-        marginLeft="40">
-      </Text>
+       <MDAppBarTitle
+        text="Text Fields">
+      </MDAppBarTitle>
     </MDAppBar>
     <Element
       width="100%"
@@ -40,7 +36,7 @@
       </MDInput>
 
       <MDInput
-        marginTop="20"
+        marginTop="20dp"
         labelText="_s(Phone number*)"
         hintText="_s(Where can we reach you?)"
         prefixText="_s(+1)">

@@ -5,7 +5,7 @@
   <Element
     element="mBackground"
     width="100%"
-    height="6"
+    height="6dp"
     borderRadius="all: 0.5"
     backgroundColor="glm::vec4(96, 2, 238, 255)">
   </Element>
@@ -24,7 +24,7 @@
     alignItemsHor="SpaceBetween"
     left="0"
     width="100%"
-    height="6">
+    height="6dp">
   </Element>
 
   <Element
@@ -46,22 +46,23 @@
     <Element
       element="mInfoShape"
       backgroundColor="r: 100, g: 100, b: 100"
-      borderRadius="all: 5">
+      borderRadius="all: 10">
       <Text
         element="mInfoText"
-        fontSize="16"
+        fontSize="16dp"
         textColor="all: 255"
-        marginLeft="16"
-        marginRight="16"
-        marginTop="8"
-        marginBottom="8">
+        marginLeft="16dp"
+        marginRight="16dp"
+        marginTop="8dp"
+        marginBottom="8dp">
       </Text>
     </Element>
     <Element
       element="mInfoTriangle"
-      shapeType="Triangle"
-      width="16"
-      height="8"
+      width="16dp"
+      height="8dp"
+      borderType="Cut"
+      borderRadius="glm::vec4(0, 0, 1, 1)"
       backgroundColor="r: 100, g: 100, b: 100">
     </Element>
   </Element>

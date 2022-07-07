@@ -1,7 +1,7 @@
 <Element
   width="100%"
   height="100%"
-  backgroundColor="glm::vec4(0, 0, 0, 80)"
+  backgroundColor="glm::vec4(0, 0, 0, 150)"
   positionType="Absolute">
 
 
@@ -9,13 +9,13 @@
     element="mBody"
     overflow="Hidden"
     orientation="Vertical"
-    borderRadius="all: 5">
-    <Shadow
+    borderRadius="all: 10">
+    <!-- <Shadow
       color="glm::vec4(50, 50, 50, 55)"
-      blurSize="5"
-      opacity="0.5"
-      offset="x: 5, y: 5">
-    </Shadow>
+      blurSize="40"
+      opacity="1"
+      offset="x: 10, y: 10">
+    </Shadow> -->
   </MDElement>
 
 </Element>

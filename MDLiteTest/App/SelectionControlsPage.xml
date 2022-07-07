@@ -39,38 +39,41 @@
 
       <Text
         text="MDCheckbox"
-        fontSize="18"
+        fontSize="18dp"
         fontStyle="Bold"
         textColor='MDColors::Grey::Get("800")'>
       </Text>
       <Element
-        marginTop="20">
+        marginTop="20dp">
         <Element
           element="mCheckTest1"
-          width="40"
-          height="5"
+          width="40dp"
+          height="5dp"
           backgroundColor="MDColors::Grey::Get()"
-          marginRight="10">
+          marginRight="20dp">
         </Element>
         <Element
           element="mCheckTest2"
-          width="40"
-          height="5"
+          width="40dp"
+          height="5dp"
           backgroundColor="MDColors::Grey::Get()"
-          marginRight="10">
+          marginRight="20dp">
         </Element>
         <Element
           element="mCheckTest3"
-          width="40"
-          height="5"
+          width="40dp"
+          height="5dp"
           backgroundColor="MDColors::Grey::Get()">
         </Element>
       </Element>
-      <Element>
+      <Element
+        marginTop="20dp">
         <MDCheckbox
+          marginRight="20dp"
           element="mCheckbox1">
         </MDCheckbox>
         <MDCheckbox
+          marginRight="20dp"
           element="mCheckbox2">
         </MDCheckbox>
         <MDCheckbox
@@ -80,31 +83,31 @@
 
       <Text
         text="MDRadio"
-        marginTop="40"
-        fontSize="18"
+        marginTop="40dp"
+        fontSize="18dp"
         fontStyle="Bold"
         textColor='MDColors::Grey::Get("800")'>
       </Text>
       <Element
-        marginTop="20">
+        marginTop="20dp">
         <Element
           element="mRadioTest1"
-          width="40"
-          height="5"
+          width="40dp"
+          height="5dp"
           backgroundColor="MDColors::Grey::Get()"
-          marginRight="10">
+          marginRight="10dp">
         </Element>
         <Element
           element="mRadioTest2"
-          width="40"
-          height="5"
+          width="40dp"
+          height="5dp"
           backgroundColor="MDColors::Grey::Get()"
-          marginRight="10">
+          marginRight="10dp">
         </Element>
         <Element
           element="mRadioTest3"
-          width="40"
-          height="5"
+          width="40dp"
+          height="5dp"
           backgroundColor="MDColors::Grey::Get()">
         </Element>
       </Element>
@@ -125,24 +128,23 @@
 
       <Text
         text="MDSwitch"
-        marginTop="40"
-        fontSize="18"
+        marginTop="40dp"
+        fontSize="18dp"
         fontStyle="Bold"
         textColor='MDColors::Grey::Get("800")'>
       </Text>
       <Element
-        marginTop="20">
+        marginTop="20dp">
         <Element
           element="mSwitchTest1"
-          width="40"
-          height="5"
-          backgroundColor="MDColors::Grey::Get()"
-          marginRight="10">
+          width="40dp"
+          height="5dp"
+          backgroundColor="MDColors::Grey::Get()">
         </Element>
       </Element>
       <MDSwitch
         element="mSwitch"
-        marginTop="20">
+        marginTop="20dp">
       </MDSwitch>
     </Element>
   </Element>

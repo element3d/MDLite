@@ -76,25 +76,25 @@
 
       <Text
         text="Context menu"
-        fontSize="18"
+        fontSize="18dp"
         fontStyle="Bold"
         textColor='MDColors::Grey::Get("800")'>
       </Text>
       <MDListTile
-        marginTop="10"
+        marginTop="10dp"
         title="_s(An item with a context menu)"
         trailing="mContextMenu">
       </MDListTile>
     
       <Text
-        marginTop="20"
+        marginTop="20dp"
         text="Simple menu"
-        fontSize="18"
+        fontSize="18dp"
         fontStyle="Bold"
         textColor='MDColors::Grey::Get("800")'>
       </Text>
       <MDMenu
-        marginTop="10"
+        marginTop="10dp"
         body="mMenuBody1">
         <MDInkWell
           backgroundColor="all: 255">

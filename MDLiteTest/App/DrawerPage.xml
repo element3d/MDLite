@@ -59,12 +59,12 @@
         </Element>
         <MDListTile
           element="mItem1"
-          leading='new MDIcon("favorite", 18, MDColors::Grey::Get())'
+          leading='new MDIcon("favorite", 64 , MDColors::Grey::Get())'
           title="_s(Item One)">
         </MDListTile>
         <MDListTile
           element="mItem2"
-          leading='new MDIcon("comment", 18, MDColors::Grey::Get())'
+          leading='new MDIcon("comment", 64, MDColors::Grey::Get())'
           title="_s(Item Two)">
         </MDListTile>
 

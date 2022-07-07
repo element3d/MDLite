@@ -17,22 +17,22 @@ MDSwitchBase::MDSwitchBase(e3::Element* pParent)
     mCircle = e3::ViewFactory::CreateShape( e3::EOrientation::Horizontal);
     AddElement(mCircle);
         mCircle->SetPositionType((e3::EPositionType)1);
-        mCircle->SetLeft(0.000000);
+        mCircle->SetLeft(0);
         mCircle->SetAspectRatio(1.000000);
         mCircle->SetHeight("100%");
         mCircle->SetBorderRadius(glm::vec4(0.500000, 0.500000, 0.500000, 0.500000));
         e3::ShadowParams mCircleShadowParams;
         mCircleShadowParams.Color = glm::vec4(100, 100, 100, 100);
-        mCircleShadowParams.BlurSize = 2;
+        mCircleShadowParams.BlurSize = 4;
         mCircleShadowParams.Opacity = 1.0;
         mCircleShadowParams.Scale = 1.0;
-        mCircleShadowParams.Offset = glm::ivec2(0, 1);
+        mCircleShadowParams.Offset = glm::ivec2(0, 2);
         mCircle->SetShadow(mCircleShadowParams);
     mRipple = e3::ViewFactory::CreateShape( e3::EOrientation::Horizontal);
     mCircle->AddElement(mRipple);
         mRipple->SetPositionType((e3::EPositionType)1);
         mRipple->SetAspectRatio(1.000000);
-        mRipple->SetHeight(40.000000);
+        mRipple->SetHeight(40);
         mRipple->SetShapeType((e3::EShapeType)1);
 
 }

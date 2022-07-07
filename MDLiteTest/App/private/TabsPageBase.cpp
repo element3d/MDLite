@@ -63,18 +63,18 @@ TabsPageBase::TabsPageBase(e3::Element* pParent)
         e3::Text* pText1 = e3::ViewFactory::CreateText();
         pElement4->AddElement(pText1);
         pText1->SetText("RED");
-        pText1->SetFontSize(30);
+        pText1->SetFontSize("30dp");
     e3::Element* pElement5 = e3::ViewFactory::CreateShape( e3::EOrientation::Horizontal);
     mTabBarView->AddElement(pElement5);
         e3::Text* pText2 = e3::ViewFactory::CreateText();
         pElement5->AddElement(pText2);
         pText2->SetText("Orange");
-        pText2->SetFontSize(30);
+        pText2->SetFontSize("30dp");
     e3::Element* pElement6 = e3::ViewFactory::CreateShape( e3::EOrientation::Horizontal);
     mTabBarView->AddElement(pElement6);
         e3::Text* pText3 = e3::ViewFactory::CreateText();
         pElement6->AddElement(pText3);
         pText3->SetText("GREEN");
-        pText3->SetFontSize(30);
+        pText3->SetFontSize("30dp");
 
 }

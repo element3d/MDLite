@@ -1,7 +1,7 @@
 #include "BottomSheetPageBase.h"
 
 #include <e3/ViewFactory.h>
-#include "./MDLiteTestValues.h"
+#include "MDLiteTestValues.h"
 
 BottomSheetPageBase::BottomSheetPageBase(e3::Element* pParent)
 	: e3::Element(pParent)
@@ -43,13 +43,13 @@ BottomSheetPageBase::BottomSheetPageBase(e3::Element* pParent)
         pCustomView1->AddElement(mBottomSheet);
     e3::Element* pElement3 = e3::ViewFactory::CreateShape( e3::EOrientation::Horizontal);
     mBottomSheet->AddElement(pElement3);
-        pElement3->SetHeight(300);
+        pElement3->SetHeight("300dp");
         pElement3->SetBackgroundColor(glm::vec4(255));
         pElement3->SetAlignItemsVer((e3::EAlignment)0);
         pElement3->SetOrientation((e3::EOrientation)1);
         e3::ShadowParams pElement3ShadowParams;
         pElement3ShadowParams.Color = glm::vec4(0.0f, 0.0f, 0.0f, 1.0f);
-        pElement3ShadowParams.BlurSize = 10;
+        pElement3ShadowParams.BlurSize = 20;
         pElement3ShadowParams.Opacity = 1.0;
         pElement3ShadowParams.Scale = 1.0;
         pElement3ShadowParams.Offset = glm::ivec2(0, 10);
@@ -57,14 +57,14 @@ BottomSheetPageBase::BottomSheetPageBase(e3::Element* pParent)
     e3::Element* pElement4 = e3::ViewFactory::CreateShape( e3::EOrientation::Horizontal);
     pElement3->AddElement(pElement4);
         pElement4->SetWidth("100%");
-        pElement4->SetHeight(70);
+        pElement4->SetHeight("70dp");
         e3::Text* pText1 = e3::ViewFactory::CreateText();
         pElement4->AddElement(pText1);
         pText1->SetText("Header");
-        pText1->SetFontSize(18);
+        pText1->SetFontSize("18dp");
                 MDDivider* pCustomView4 = new MDDivider();
         pElement3->AddElement(pCustomView4);
-        pCustomView4->SetHeight(1);
+        pCustomView4->SetHeight("1dp");
         pCustomView4->SetBackgroundColor(glm::vec4(0, 0, 0, 50));
         mList = new MDListView();
         pElement3->AddElement(mList);

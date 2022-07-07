@@ -1,7 +1,7 @@
 #include "MainMenuItemBase.h"
 
 #include <e3/ViewFactory.h>
-#include "./MDLiteTestValues.h"
+#include "MDLiteTestValues.h"
 
 MainMenuItemBase::MainMenuItemBase(e3::Element* pParent)
 	: MDInkWell(pParent)
@@ -10,7 +10,7 @@ MainMenuItemBase::MainMenuItemBase(e3::Element* pParent)
         this->SetHeight(e3::Dim("450", "450", "450", "150", "150", "150"));
         this->SetMargin(e3::Dim("30", "30", "30", "10", "10", "10"));
         this->SetOrientation((e3::EOrientation)1);
-        this->SetBorderRadius(glm::vec4(5));
+        this->SetBorderRadius(glm::vec4(10));
         this->SetBorderColor(MDTheme::Get()->PrimaryColor);
         this->SetBorderSize(e3::Dim("6", "6", "6", "2", "2", "2"));
         this->SetBackgroundColor(MDTheme::Get()->Surface);
@@ -24,7 +24,7 @@ MainMenuItemBase::MainMenuItemBase(e3::Element* pParent)
         AddElement(mTitle);
         mTitle->SetText("App bar");
         mTitle->SetTextColor(MDTheme::Get()->PrimaryColor);
-        mTitle->SetFontSize(e3::Dim("52", "52", "52", "14", "14", "14"));
+        mTitle->SetFontSize(e3::Dim("48", "48", "48", "14", "14", "14"));
         mTitle->SetFontStyle((e3::EFontStyle)2);
 
 }

@@ -21,6 +21,7 @@ MDTabBase::MDTabBase(e3::Element* pParent)
         pElement1->SetPaddingBottom(e3::Dim("10", "10", "40", "10", "10", "10"));
         mLeadingIcon = new MDIcon();
         pElement1->AddElement(mLeadingIcon);
+        mLeadingIcon->SetColor(glm::vec4(255));
         mLeadingIcon->SetMargin(0);
         mLabel = e3::ViewFactory::CreateText();
         pElement1->AddElement(mLabel);

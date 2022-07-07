@@ -3,8 +3,9 @@
   overflow="Hidden">
   <Shadow
     color="all: 100"
-    offset="x: 0, y: 2"
-    blurSize="2">
+    offset="x: 0, y: 10"
+    blurSize="20"
+    opacity="1">
   </Shadow>
  
   <Element

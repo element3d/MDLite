@@ -6,6 +6,7 @@
 #include <MDIconButton.h>
 #include <MDScaffold.h>
 #include <MDAppBar.h>
+#include <MDAppBarTitle.h>
 #include <MDInput.h>
 
 

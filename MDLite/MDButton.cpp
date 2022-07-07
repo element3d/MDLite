@@ -1,28 +1,28 @@
 #include "MDButton.h"
 
-MDButton::MDButton(e3::Element* pParent)
-	: MDButtonBase(pParent)
+MDButton::MDButton(e3::Element *pParent)
+		: MDButtonBase(pParent)
 {
 	mLabel->SetTextColor(MDTheme::Get()->OnPrimary);
 }
 
-void MDButton::SetIcon(MDIcon* pIcon)
+void MDButton::SetIcon(MDIcon *pIcon)
 {
-	pIcon->SetMarginLeft(16);
+	pIcon->SetMarginLeft(e3::Dim("12dp"));
 	pIcon->SetMarginRight(0);
-	pIcon->SetWidth(14);
-	pIcon->SetHeight(14);
+	pIcon->SetWidth(e3::Dim("12dp"));
+	pIcon->SetHeight(e3::Dim("12dp"));
 	pIcon->SetColor(MDTheme::Get()->OnPrimary);
 	mIconCont->AddElement(pIcon);
 }
 
-void MDButton::SetLabel(const std::string& label, bool translate)
+void MDButton::SetLabel(const std::string &label, bool translate)
 {
 	mLabel->SetVisibility(e3::EVisibility::Visible);
 	mLabel->SetText(label, translate);
 }
 
-void MDButton::OnMouseEnter(e3::MouseEvent* pEvent)
+void MDButton::OnMouseEnter(e3::MouseEvent *pEvent)
 {
 	MDButtonBase::OnMouseEnter(pEvent);
 	mHover->SetWidth(GetGeometry().width);
@@ -47,13 +47,13 @@ void MDButton::OnMouseEnter(e3::MouseEvent* pEvent)
 	//mColor = new MDColor(c);*/
 }
 
-void MDButton::OnMouseLeave(e3::MouseEvent* pEvent) 
+void MDButton::OnMouseLeave(e3::MouseEvent *pEvent)
 {
 	MDButtonBase::OnMouseLeave(pEvent);
 	mHover->SetBackgroundColor(glm::vec4(255, 255, 255, 0));
 }
 
-void MDButton::Render() 
+void MDButton::Render()
 {
 	//SetBackgroundColor(MDTheme::Get()->PrimaryColor);
 	MDButtonBase::Render();

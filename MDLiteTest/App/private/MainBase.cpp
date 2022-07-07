@@ -1,7 +1,7 @@
 #include "MainBase.h"
 
 #include <e3/ViewFactory.h>
-#include "./MDLiteTestValues.h"
+#include "MDLiteTestValues.h"
 
 MainBase::MainBase(e3::Element* pParent)
 	: MDElement(pParent)
@@ -50,7 +50,7 @@ MainBase::MainBase(e3::Element* pParent)
         mButtonPage = new MainMenuItem();
         pCustomView4->AddElement(mButtonPage);
         mButtonPage->SetIcon(_s(crop_7_5));
-        mButtonPage->SetTitle(_s(Buttons));
+        mButtonPage->SetTitle(_s(Кнопки));
                 MDRow* pCustomView5 = new MDRow();
         pCustomView3->AddElement(pCustomView5);
         mBottomNavBarPage = new MainMenuItem();

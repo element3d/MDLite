@@ -38,24 +38,24 @@
     <MDBottomSheet
       element="mBottomSheet">
       <Element
-        height="300"
+        height="300dp"
         backgroundColor="glm::vec4(255)"
         alignItemsVer="Start"
         orientation="Vertical">
         <Shadow
-          blurSize="10"
+          blurSize="20"
           offset="x: 0, y: 10">
         </Shadow>
         <Element
           width="100%"
-          height="70">
+          height="70dp">
           <Text
             text="Header"
-            fontSize="18">
+            fontSize="18dp">
           </Text>
         </Element>
         <MDDivider
-          height="1"
+          height="1dp"
           backgroundColor="glm::vec4(0, 0, 0, 50)">
         </MDDivider>
         <MDListView

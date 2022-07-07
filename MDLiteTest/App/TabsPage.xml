@@ -58,19 +58,19 @@
         <Element>
           <Text
             text="RED"
-            fontSize="30">
+            fontSize="30dp">
           </Text>
         </Element>
         <Element>
           <Text
             text="Orange"
-            fontSize="30">
+            fontSize="30dp">
           </Text>
         </Element>
         <Element>
           <Text
             text="GREEN"
-            fontSize="30">
+            fontSize="30dp">
           </Text>
         </Element>
 

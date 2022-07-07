@@ -2,15 +2,15 @@
   width="m: (22, 33, 50), d: (22, 20, 20)"
   height="m: (22, 33, 50), d: (20, 20, 20)"
   shapeType="Circle"
-  borderSize="m: (5, 5, 10), d: 2"
-  margin="m(8, 8, 25), d: 8"
+  borderSize="2dp"
+  margin="m: (8, 8, 25), d: 8"
   borderColor="glm::vec4(96, 2, 238, 255)">
 
   <Element
     element="mRipple"
     positionType="Absolute"
     aspectRatio="1"
-    height="40"
+    height="40dp"
     shapeType="Circle">
   </Element>
 

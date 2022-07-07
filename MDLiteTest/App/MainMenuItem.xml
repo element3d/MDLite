@@ -3,7 +3,7 @@
   height="m: 450, d: 150"
   margin="m: 30, d: 10"
   orientation="Vertical"
-  borderRadius="glm::vec4(5)"
+  borderRadius="glm::vec4(10)"
   borderColor="MDTheme::Get()->PrimaryColor"
   borderSize="m: 6, d: 2"
   backgroundColor="MDTheme::Get()->Surface">
@@ -18,7 +18,7 @@
     element="mTitle"
     text="App bar"
     textColor="MDTheme::Get()->PrimaryColor"
-    fontSize="m: 52, d:14"
+    fontSize="m: 48, d:14"
     fontStyle="Bold">
   </MDText>
 </MDInkWell>

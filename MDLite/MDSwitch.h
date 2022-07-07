@@ -14,7 +14,10 @@ public:
 	void SetValueColor(MDColor* pColor);
 	void Check();
 	void Uncheck();
-
+	virtual void Render() override
+	{
+		MDSwitchBase::Render();
+	}
 	void SetOnChangeCallback(OnChangeCallback c);
 
 public:

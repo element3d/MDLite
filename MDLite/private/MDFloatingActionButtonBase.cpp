@@ -14,10 +14,10 @@ MDFloatingActionButtonBase::MDFloatingActionButtonBase(e3::Element* pParent)
         this->SetBackgroundColor(glm::vec4(96, 2, 238, 255));
         e3::ShadowParams ShadowParams;
         ShadowParams.Color = glm::vec4(100.000000, 100.000000, 100.000000, 255.000000);
-        ShadowParams.BlurSize = 2;
+        ShadowParams.BlurSize = 20;
         ShadowParams.Opacity = 1.0;
         ShadowParams.Scale = 1.0;
-        ShadowParams.Offset = glm::ivec2(0, 2);
+        ShadowParams.Offset = glm::ivec2(0, 10);
         SetShadow(ShadowParams);
     mHover = e3::ViewFactory::CreateShape( e3::EOrientation::Horizontal);
     AddElement(mHover);

@@ -57,11 +57,11 @@ DrawerPageBase::DrawerPageBase(e3::Element* pParent)
         pElement4->SetBackgroundColor(MDColors::Primary::Get());
         mItem1 = new MDListTile();
         pElement3->AddElement(mItem1);
-        mItem1->SetLeading(new MDIcon("favorite", 18, MDColors::Grey::Get()));
+        mItem1->SetLeading(new MDIcon("favorite", 64 , MDColors::Grey::Get()));
         mItem1->SetTitle(_s(Item One));
         mItem2 = new MDListTile();
         pElement3->AddElement(mItem2);
-        mItem2->SetLeading(new MDIcon("comment", 18, MDColors::Grey::Get()));
+        mItem2->SetLeading(new MDIcon("comment", 64, MDColors::Grey::Get()));
         mItem2->SetTitle(_s(Item Two));
 
 }

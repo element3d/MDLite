@@ -7,7 +7,7 @@ MDButtonBase::MDButtonBase(e3::Element* pParent)
 	: MDInkWell(pParent)
 {
         this->SetHeight(e3::Dim("35", "55", "100", "36", "36", "36"));
-        this->SetBorderRadius(glm::vec4(5.000000, 5.000000, 5.000000, 5.000000));
+        this->SetBorderRadius(glm::vec4(10.000000, 10.000000, 10.000000, 10.000000));
         this->SetOverflow((e3::EOverflow)0);
         this->SetBackgroundColor(MDTheme::Get()->PrimaryColor);
     mIconCont = e3::ViewFactory::CreateShape( e3::EOrientation::Horizontal);

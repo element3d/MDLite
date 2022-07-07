@@ -26,10 +26,10 @@ void MDSnackbar::Show()
 	if (!mHideTimeout)
 		mHideTimeout = new e3::Timeout();
 
-	mHideTimeout->Start(5, [this]() {
+	/*mHideTimeout->Start(5, [this]() {
 		Hide();
 		mHideTimeout = nullptr;
-	});
+	});*/
 }
 
 void MDSnackbar::Hide()

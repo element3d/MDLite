@@ -33,8 +33,8 @@
   <Shadow
     color="all: 100"
     opacity="1.0"
-    offset="x: 0, y: 2"
-    blurSize="2">
+    offset="x: 0, y: 10"
+    blurSize="20">
   </Shadow>
 
 </MDInkWell>

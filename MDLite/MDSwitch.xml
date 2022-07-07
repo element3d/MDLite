@@ -30,8 +30,8 @@
     <Shadow
       color="glm::vec4(100, 100, 100, 100)"
       opacity="1.0"
-      offset="x: 0, y: 1"
-      blurSize="2">
+      offset="x: 0, y: 2"
+      blurSize="4">
     </Shadow> 
 
   </Element>

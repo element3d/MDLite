@@ -24,6 +24,7 @@
     paddingBottom="m: (10, 10, 40), d: (10, 10, 10)">
     <MDIcon
       element="mLeadingIcon"
+      color="glm::vec4(255)"
       margin="0">
     </MDIcon>
     <Text

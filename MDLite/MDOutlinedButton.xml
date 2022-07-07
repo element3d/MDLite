@@ -2,7 +2,7 @@
   height="m: (35, 55, 100), d: 36"
 
   borderColor="MDColors::Primary::Get()"
-  borderRadius="all: 5"
+  borderRadius="all: 10"
   borderSize="1">
   <!-- minWidth="m: (100, 150, 300), d: (100, 100, 100)"
   paddingLeft="16"

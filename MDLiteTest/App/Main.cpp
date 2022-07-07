@@ -48,27 +48,27 @@ Main::Main(e3::Element* pParent)
 
 	mAppBarPage->SetOnClickCallback([this](e3::MouseEvent*) {
 		AppBarPage* pAppBarPage = new AppBarPage();
-		GetApplication()->PushElement(pAppBarPage, new MDPushTransitionAnimation(pAppBarPage));
+		GetApplication()->PushElement(pAppBarPage, false, new MDPushTransitionAnimation(pAppBarPage));
 	});
 
 	mButtonPage->SetOnClickCallback([this](e3::MouseEvent*) {
 		ButtonsPage* pButtonsPage = new ButtonsPage();
-		GetApplication()->PushElement(pButtonsPage, new MDPushTransitionAnimation(pButtonsPage));
+		GetApplication()->PushElement(pButtonsPage, false, new MDPushTransitionAnimation(pButtonsPage));
 	});
 
 	mBottomNavBarPage->SetOnClickCallback([this](e3::MouseEvent*) {
 		BottomNavigationBarPage* pBottomNavigationBarPage = new BottomNavigationBarPage();
-		GetApplication()->PushElement(pBottomNavigationBarPage, new MDPushTransitionAnimation(pBottomNavigationBarPage));
+		GetApplication()->PushElement(pBottomNavigationBarPage, false, new MDPushTransitionAnimation(pBottomNavigationBarPage));
 	});
 
 	mBottomSheetPage->SetOnClickCallback([this](e3::MouseEvent*) {
 		BottomSheetPage* pBottomSheetPage = new BottomSheetPage();
-		GetApplication()->PushElement(pBottomSheetPage, new MDPushTransitionAnimation(pBottomSheetPage));
+		GetApplication()->PushElement(pBottomSheetPage, false, new MDPushTransitionAnimation(pBottomSheetPage));
 	});
 
 	mMenuPage->SetOnClickCallback([this](e3::MouseEvent*) {
 		MenuPage* pMenuPage = new MenuPage();
-		GetApplication()->PushElement(pMenuPage, new MDPushTransitionAnimation(pMenuPage));
+		GetApplication()->PushElement(pMenuPage, false, new MDPushTransitionAnimation(pMenuPage));
 	});
 
 	mProgressIndicatorsPage->SetOnClickCallback([this](e3::MouseEvent*) {
@@ -101,16 +101,16 @@ Main::Main(e3::Element* pParent)
 
 	mDialogPage->SetOnClickCallback([this](e3::MouseEvent*) {
 		DialogPage* pDialogPage = new DialogPage();
-		GetApplication()->PushElement(pDialogPage, new MDPushTransitionAnimation(pDialogPage));
+		GetApplication()->PushElement(pDialogPage, false, new MDPushTransitionAnimation(pDialogPage));
 	});
 
 	mListPage->SetOnClickCallback([this](e3::MouseEvent*) {
 		ListPage* pListPage = new ListPage();
-		GetApplication()->PushElement(pListPage, new MDPushTransitionAnimation(pListPage));
+		GetApplication()->PushElement(pListPage, false, new MDPushTransitionAnimation(pListPage));
 	});
 
 	mSnackbarPage->SetOnClickCallback([this](e3::MouseEvent*) {
 		SnackbarPage* pSnackbarPage = new SnackbarPage();
-		GetApplication()->PushElement(pSnackbarPage, new MDPushTransitionAnimation(pSnackbarPage));
+		GetApplication()->PushElement(pSnackbarPage, false, new MDPushTransitionAnimation(pSnackbarPage));
 	});
 }

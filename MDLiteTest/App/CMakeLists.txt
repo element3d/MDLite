@@ -43,7 +43,6 @@ target_include_directories(${PROJECT} PRIVATE private)
 
 target_link_libraries(${PROJECT}
     element3d
-	CarbonGL
 	${ELEMENTARY_LIBS}
     MDLite
 )
