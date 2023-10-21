@@ -4,11 +4,11 @@
 DialogPage::DialogPage(e3::Element* pParent)
 	: DialogPageBase(pParent)
 {
-	mBack->SetOnClickCallback([this](e3::MouseEvent*) {
+	mBack->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		GetApplication()->PopElement(new MDPopTransitionAnimation(this));
 	});
 
-	mDialogButton->SetOnClickCallback([this](e3::MouseEvent*) {
+	mDialogButton->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		mDialog->Show();
 	});
 }

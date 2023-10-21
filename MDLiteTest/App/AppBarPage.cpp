@@ -4,7 +4,7 @@
 AppBarPage::AppBarPage(e3::Element* pParent)
 	: AppBarPageBase(pParent)
 {
-	mBack->SetOnClickCallback([this](e3::MouseEvent*) {
+	mBack->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		GetApplication()->PopElement(new MDPopTransitionAnimation(this));
 	});
 }

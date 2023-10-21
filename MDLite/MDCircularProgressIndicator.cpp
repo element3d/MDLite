@@ -30,7 +30,7 @@ void MDCircularProgressIndicator::AnimateRotation(float sec)
 
 void MDCircularProgressIndicator::AnimateStartAngle(float sec)
 {
-	if (!mStartAngleAnimation) mStartAngleAnimation = new e3::Animation();
+	/*if (!mStartAngleAnimation) mStartAngleAnimation = new e3::Animation();
 
 	float startAngle = GetStartAngle();
 	float endAngle = GetEndAngle();
@@ -42,12 +42,12 @@ void MDCircularProgressIndicator::AnimateStartAngle(float sec)
 		mStartAngleAnimation = nullptr;
 		if (mDestroyed) return;
 		AnimateEndAngle(sec);
-	});
+	});*/
 }
 
 void MDCircularProgressIndicator::AnimateEndAngle(float sec)
 {
-	if (!mEndAngleAnimation) mEndAngleAnimation = new e3::Animation();
+	/*if (!mEndAngleAnimation) mEndAngleAnimation = new e3::Animation();
 
 	mEndAngleAnimation->Start(sec, e3::EAnimation::EaseOutQuad, [this](float v) {
 		float startAngle = GetStartAngle();
@@ -58,17 +58,18 @@ void MDCircularProgressIndicator::AnimateEndAngle(float sec)
 		if (mDestroyed) return;
 		//SetStartAngle(endAngle);
 		AnimateStartAngle(sec);
-	});
+	});*/
 }
 
 void MDCircularProgressIndicator::SetValue(float value)
 {
-	SetEndAngle(360 * value);
+	// SetEndAngle(360 * value);
 }
 
 float MDCircularProgressIndicator::GetValue()
 {
-	return GetEndAngle() / 360.0;
+	//return GetEndAngle() / 360.0;
+	return 0;
 }
 
 void MDCircularProgressIndicator::Render()

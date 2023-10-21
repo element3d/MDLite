@@ -50,7 +50,7 @@ void MDTabBar::AddElement(MDTab* pTab)
 			pTab->SetScaling(e3::EScaling::Shrink);
 		}
 	}
-	pTab->SetOnClickCallback([this, pTab, index](e3::MouseEvent*) {
+	pTab->SignalOnClick.Connect([this, pTab, index](e3::MouseEvent*) {
 		if (mOnTabSelectCallback) mOnTabSelectCallback(pTab);
 
 		if (mTabBarView) mTabBarView->SetIndex(index);

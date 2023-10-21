@@ -19,7 +19,6 @@ add_library(${PROJECT} SHARED ${SRC_PRIVATE} ${SRC})
 
 target_link_libraries(${PROJECT}
     element3d
-    CarbonGL
 	${ELEMENTARY_LIBS}
 )
 
@@ -27,6 +26,7 @@ if(ANDROID)
     target_link_libraries(${PROJECT}
 		EGL
 		GLESv3
+		log
     )
 elseif(WIN32)
 	add_definitions(-D__E3_EXPORTING__)

@@ -4,7 +4,7 @@
 SlidersPage::SlidersPage(e3::Element *pParent)
 		: SlidersPageBase(pParent)
 {
-	mBack->SetOnClickCallback([this](e3::MouseEvent *) {
+	mBack->SignalOnClick.Connect([this](e3::MouseEvent *) {
 		GetApplication()->PopElement();
 	});
 

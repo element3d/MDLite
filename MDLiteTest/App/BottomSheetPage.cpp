@@ -5,11 +5,11 @@
 BottomSheetPage::BottomSheetPage(e3::Element* pParent)
 	: BottomSheetPageBase(pParent)
 {
-	mBack->SetOnClickCallback([this](e3::MouseEvent*) {
+	mBack->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		GetApplication()->PopElement(new MDPopTransitionAnimation(this));
 	});
 
-	mShowButton->SetOnClickCallback([this](e3::MouseEvent*) {
+	mShowButton->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		mBottomSheet->ShowModal();
 	});
 

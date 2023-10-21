@@ -27,7 +27,7 @@ include_directories(
 )
 if (ANDROID)
     add_definitions(-D__E3_TARGET_ANDROID__ -D__E3_OS_ANDROID__)
-    link_directories(${LIBS_DIR}/${ANDROID_ABI})
+    link_directories(${LIBS_DIR}/Android/${ANDROID_ABI})
 elseif(EMSCRIPTEN)
     add_definitions(-D__E3_OS_WEB__)
     link_directories(${LIBS_DIR}/emscripten)

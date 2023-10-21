@@ -3,7 +3,7 @@
 SnackbarPage::SnackbarPage(e3::Element* pParent)
 	: SnackbarPageBase(pParent)
 {
-	mButton->SetOnClickCallback([this](e3::MouseEvent*) {
+	mButton->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		mSnackbar->Show();
 	});
 }

@@ -46,70 +46,70 @@ Main::Main(e3::Element* pParent)
 	});
 	
 
-	mAppBarPage->SetOnClickCallback([this](e3::MouseEvent*) {
+	mAppBarPage->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		AppBarPage* pAppBarPage = new AppBarPage();
 		GetApplication()->PushElement(pAppBarPage, false, new MDPushTransitionAnimation(pAppBarPage));
 	});
 
-	mButtonPage->SetOnClickCallback([this](e3::MouseEvent*) {
+	mButtonPage->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		ButtonsPage* pButtonsPage = new ButtonsPage();
 		GetApplication()->PushElement(pButtonsPage, false, new MDPushTransitionAnimation(pButtonsPage));
 	});
 
-	mBottomNavBarPage->SetOnClickCallback([this](e3::MouseEvent*) {
+	mBottomNavBarPage->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		BottomNavigationBarPage* pBottomNavigationBarPage = new BottomNavigationBarPage();
 		GetApplication()->PushElement(pBottomNavigationBarPage, false, new MDPushTransitionAnimation(pBottomNavigationBarPage));
 	});
 
-	mBottomSheetPage->SetOnClickCallback([this](e3::MouseEvent*) {
+	mBottomSheetPage->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		BottomSheetPage* pBottomSheetPage = new BottomSheetPage();
 		GetApplication()->PushElement(pBottomSheetPage, false, new MDPushTransitionAnimation(pBottomSheetPage));
 	});
 
-	mMenuPage->SetOnClickCallback([this](e3::MouseEvent*) {
+	mMenuPage->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		MenuPage* pMenuPage = new MenuPage();
 		GetApplication()->PushElement(pMenuPage, false, new MDPushTransitionAnimation(pMenuPage));
 	});
 
-	mProgressIndicatorsPage->SetOnClickCallback([this](e3::MouseEvent*) {
+	mProgressIndicatorsPage->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		GetApplication()->PushElement(new ProgressIndicatorPage());
 	});
 
-	mSelectionControlsPage->SetOnClickCallback([this](e3::MouseEvent*) {
+	mSelectionControlsPage->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		GetApplication()->PushElement(new SelectionControlsPage());
 	});
 
-	mSlidersPage->SetOnClickCallback([this](e3::MouseEvent*) {
+	mSlidersPage->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		GetApplication()->PushElement(new SlidersPage());
 	});
 
-	mTextFieldsPage->SetOnClickCallback([this](e3::MouseEvent*) {
+	mTextFieldsPage->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		GetApplication()->PushElement(new TextFieldsPage());
 	});
 
-	mTabsPage->SetOnClickCallback([this](e3::MouseEvent*) {
+	mTabsPage->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		GetApplication()->PushElement(new TabsPage());
 	});
 
-	mNavRailPage->SetOnClickCallback([this](e3::MouseEvent*) {
+	mNavRailPage->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		GetApplication()->PushElement(new NavigationRailPage());
 	});
 
-	mDrawerPage->SetOnClickCallback([this](e3::MouseEvent*) {
+	mDrawerPage->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		GetApplication()->PushElement(new DrawerPage());
 	});
 
-	mDialogPage->SetOnClickCallback([this](e3::MouseEvent*) {
+	mDialogPage->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		DialogPage* pDialogPage = new DialogPage();
-		GetApplication()->PushElement(pDialogPage, false, new MDPushTransitionAnimation(pDialogPage));
+		GetApplication()->PushElement(pDialogPage, false,  new MDPushTransitionAnimation(pDialogPage));
 	});
 
-	mListPage->SetOnClickCallback([this](e3::MouseEvent*) {
+	mListPage->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		ListPage* pListPage = new ListPage();
 		GetApplication()->PushElement(pListPage, false, new MDPushTransitionAnimation(pListPage));
 	});
 
-	mSnackbarPage->SetOnClickCallback([this](e3::MouseEvent*) {
+	mSnackbarPage->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		SnackbarPage* pSnackbarPage = new SnackbarPage();
 		GetApplication()->PushElement(pSnackbarPage, false, new MDPushTransitionAnimation(pSnackbarPage));
 	});

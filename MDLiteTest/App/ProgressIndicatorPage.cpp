@@ -4,7 +4,7 @@
 ProgressIndicatorPage::ProgressIndicatorPage(e3::Element* pParent)
 	: ProgressIndicatorPageBase(pParent)
 {
-	mBack->SetOnClickCallback([this](e3::MouseEvent*) {
+	mBack->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		GetApplication()->PopElement();
 	});
 

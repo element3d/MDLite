@@ -18,7 +18,7 @@ void MDBottomNavigationBar::AddElement(e3::Element* pItem)
 
 	if (!GetNumChildren()) pI->Select();
 	MDBottomNavigationBarBase::AddElement(pItem);
-	pI->SetOnClickCallback([this, pI](e3::MouseEvent*) {
+	pI->SignalOnClick.Connect([this, pI](e3::MouseEvent*) {
 		for (int i = 0; i < GetNumChildren(); ++i)
 		{
 			MDBottomNavigationBarItem* pTmpItem = (MDBottomNavigationBarItem*)GetChildren()[i];

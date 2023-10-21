@@ -4,7 +4,7 @@
 BottomNavigationBarPage::BottomNavigationBarPage(e3::Element* pParent)
 	: BottomNavigationBarPageBase(pParent)
 {
-	mBack->SetOnClickCallback([this](e3::MouseEvent*) {
+	mBack->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		GetApplication()->PopElement(new MDPopTransitionAnimation(this));
 	});
 }

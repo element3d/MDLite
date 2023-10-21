@@ -6,7 +6,7 @@
 #include "MDColors.h"
 
 
-class MDCircularProgressIndicatorBase : public e3::Arc
+class MDCircularProgressIndicatorBase : public e3::Element //e3::Arc
 {
 public:
     struct __Id

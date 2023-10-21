@@ -4,7 +4,7 @@
 TabsPage::TabsPage(e3::Element* pParent)
 	: TabsPageBase(pParent)
 {
-	mBack->SetOnClickCallback([this](e3::MouseEvent*) {
+	mBack->SignalOnClick.Connect([this](e3::MouseEvent*) {
 		GetApplication()->PopElement();
 	});
 }
